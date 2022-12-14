@@ -24,6 +24,7 @@ class VideoService: NSObject {
     let picker = UIImagePickerController()
     var latitude:CLLocationDegrees?
     var longitude: CLLocationDegrees?
+    var isReversebtnTapped: Bool = false
     static let instance = VideoService()
     private override init() {
         super.init()
@@ -58,6 +59,13 @@ extension VideoService {
             btn.translatesAutoresizingMaskIntoConstraints = false
             return btn
         }()
+        lazy var reverceButton: UIButton = {
+            let btn = UIButton()
+            btn.addTarget(self, action: #selector(reverseBtnTapped), for: .touchUpInside)
+            btn.setImage(UIImage(named: "rotateCamera"), for: .normal)
+            btn.translatesAutoresizingMaskIntoConstraints = false
+            return btn
+        }()
         
         lazy var StopLabel: UILabel = {
             let lbl = UILabel()
@@ -86,16 +94,21 @@ extension VideoService {
         picker.view.addSubview(overlayView)
         picker.view.addSubview(SaveButton)
         picker.view.addSubview(StopLabel)
+        picker.view.addSubview(reverceButton)
         
         
         
         SaveButton.centerXAnchor.constraint(equalTo: picker.view.centerXAnchor).isActive = true
         StopLabel.centerXAnchor.constraint(equalTo: picker.view.centerXAnchor).isActive = true
         
+        
         //with this line you are telling the button to position itself vertically 100 from the bottom of the view. you can change the number to whatever suits your needs
         SaveButton.bottomAnchor.constraint(equalTo: picker.view.bottomAnchor, constant: -75).isActive = true
         StopLabel.bottomAnchor.constraint(equalTo: picker.view.bottomAnchor, constant: -10).isActive = true
-        
+        reverceButton.bottomAnchor.constraint(equalTo: picker.view.bottomAnchor, constant: -90).isActive = true
+        reverceButton.leftAnchor.constraint(equalTo: SaveButton.rightAnchor, constant: 20).isActive = true
+        reverceButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        reverceButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
         // hide the camera controls
         picker.showsCameraControls = false
         picker.cameraOverlayView = overlayView
@@ -103,8 +116,14 @@ extension VideoService {
         
         return picker
     }
-    
+    @objc func reverseBtnTapped() {
+        isReversebtnTapped = true
+        picker.stopVideoCapture()
+        picker.cameraDevice = picker.cameraDevice == .rear ? .front : .rear
+        picker.startVideoCapture()
+    }
     @objc func stopButton() {
+        isReversebtnTapped = false
         picker.stopVideoCapture()
     }
     
@@ -135,7 +154,10 @@ extension VideoService {
     
     @objc func video(videoPath: NSString, didFinishSavingWithError error: NSError?, contextInfo info: AnyObject) {
         let videoURL = URL(fileURLWithPath: videoPath as String)
-        exit(-1)
+        if !isReversebtnTapped {
+            exit(-1)
+        }
+        
         //  self.delegate?.videoDidFinishSaving(error: error, url: videoURL)
     }
     

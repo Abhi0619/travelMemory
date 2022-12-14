@@ -96,14 +96,14 @@ extension UserLocation: CLLocationManagerDelegate {
             return
         }
         // This is where you do something with your location that's accurate enough.
-        guard let userLocation = locations.last else {
+        guard let userLocation = locations.first else {
             print("error getting user location")
             return
         }
         DispatchQueue.main.async {
             self.completionBlock?(userLocation,nil)
-            manager.stopUpdatingLocation()
-            self.completionBlock = nil
+           // manager.stopUpdatingLocation()
+          //  self.completionBlock = nil
         }
         
     }
