@@ -17,7 +17,6 @@ class ViewController: UIViewController,CLLocationManagerDelegate, GMSMapViewDele
     @IBOutlet weak var mapKitView: MKMapView!
     var locationManager = CLLocationManager()
     
-    
     //MARK: - Instance Method
     var isFromWidget: Bool = false
     var arrData: [TravelMemory] = []
