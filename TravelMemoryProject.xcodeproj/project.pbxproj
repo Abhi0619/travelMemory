@@ -1,0 +1,759 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F90736D8ECE525CAEEDBDA4 /* Pods_WidgetExtensionExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2B765957FC1513E39655CD /* Pods_WidgetExtensionExtension.framework */; };
+		871D45E5E56E4991465AE9E7 /* Pods_TravelMemoryProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA69C96E05E18A8AAAABFABA /* Pods_TravelMemoryProject.framework */; };
+		EC5BBD722941A39600153D60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BBD712941A39600153D60 /* AppDelegate.swift */; };
+		EC5BBD742941A39600153D60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BBD732941A39600153D60 /* SceneDelegate.swift */; };
+		EC5BBD762941A39600153D60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BBD752941A39600153D60 /* ViewController.swift */; };
+		EC5BBD7C2941A39600153D60 /* TravelMemoryProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC5BBD7A2941A39600153D60 /* TravelMemoryProject.xcdatamodeld */; };
+		EC5BBD7E2941A39700153D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC5BBD7D2941A39700153D60 /* Assets.xcassets */; };
+		EC5BBD812941A39700153D60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5BBD7F2941A39700153D60 /* LaunchScreen.storyboard */; };
+		EC5BBD8F2941A3F500153D60 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5BBD8E2941A3F500153D60 /* WidgetKit.framework */; };
+		EC5BBD912941A3F500153D60 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5BBD902941A3F500153D60 /* SwiftUI.framework */; };
+		EC5BBD942941A3F500153D60 /* WidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BBD932941A3F500153D60 /* WidgetExtension.swift */; };
+		EC5BBD972941A3F600153D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC5BBD962941A3F600153D60 /* Assets.xcassets */; };
+		EC5BBD992941A3F600153D60 /* WidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = EC5BBD952941A3F500153D60 /* WidgetExtension.intentdefinition */; };
+		EC5BBD9A2941A3F600153D60 /* WidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = EC5BBD952941A3F500153D60 /* WidgetExtension.intentdefinition */; };
+		EC5BBD9D2941A3F600153D60 /* WidgetExtensionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EC5BBD8C2941A3F500153D60 /* WidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EC5BBDA62941AFFC00153D60 /* VideoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BBDA52941AFFB00153D60 /* VideoService.swift */; };
+		EC5BBDAD2941B09C00153D60 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BBDA82941B09C00153D60 /* String_Extension.swift */; };
+		EC5BBDAE2941B09C00153D60 /* UIAlertController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BBDA92941B09C00153D60 /* UIAlertController_Extension.swift */; };
+		EC5BBDAF2941B09C00153D60 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BBDAA2941B09C00153D60 /* Device.swift */; };
+		EC5BBDB02941B09C00153D60 /* UISlider_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BBDAB2941B09C00153D60 /* UISlider_Extension.swift */; };
+		EC5BBDB12941B09C00153D60 /* AVPlayer_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BBDAC2941B09C00153D60 /* AVPlayer_Extension.swift */; };
+		EC6ED42C2943451300218E05 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6ED42B2943451300218E05 /* MapKit.framework */; };
+		EC79326D2949A60A001A8873 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD523D5294849EF00A68E33 /* UserLocation.swift */; };
+		ECAF4B632949A53F004169E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAF4B622949A53F004169E7 /* Main.storyboard */; };
+		ECC499DF2947883800683B46 /* LocationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC499DE2947883800683B46 /* LocationList.swift */; };
+		ECC499E12947884000683B46 /* locationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC499E02947884000683B46 /* locationCell.swift */; };
+		ECD523D6294849EF00A68E33 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD523D5294849EF00A68E33 /* UserLocation.swift */; };
+		ECD523D729486D6200A68E33 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6ED42B2943451300218E05 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC5BBD9B2941A3F600153D60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC5BBD662941A39600153D60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC5BBD8B2941A3F500153D60;
+			remoteInfo = WidgetExtensionExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC5BBDA12941A3F600153D60 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EC5BBD9D2941A3F600153D60 /* WidgetExtensionExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		023471BFB38E4F3CF43C2CD7 /* Pods-TravelMemoryProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelMemoryProject.debug.xcconfig"; path = "Target Support Files/Pods-TravelMemoryProject/Pods-TravelMemoryProject.debug.xcconfig"; sourceTree = "<group>"; };
+		1E1E278F1D1A348DAA64B570 /* Pods-WidgetExtensionExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetExtensionExtension.debug.xcconfig"; path = "Target Support Files/Pods-WidgetExtensionExtension/Pods-WidgetExtensionExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		26CF8222188127E2EA21D89C /* Pods-WidgetExtensionExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetExtensionExtension.release.xcconfig"; path = "Target Support Files/Pods-WidgetExtensionExtension/Pods-WidgetExtensionExtension.release.xcconfig"; sourceTree = "<group>"; };
+		4C2B765957FC1513E39655CD /* Pods_WidgetExtensionExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WidgetExtensionExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97D487456C8BE5D0BBE6925A /* Pods-TravelMemoryProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelMemoryProject.release.xcconfig"; path = "Target Support Files/Pods-TravelMemoryProject/Pods-TravelMemoryProject.release.xcconfig"; sourceTree = "<group>"; };
+		BA69C96E05E18A8AAAABFABA /* Pods_TravelMemoryProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelMemoryProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5BBD6E2941A39600153D60 /* TravelMemoryProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelMemoryProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5BBD712941A39600153D60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC5BBD732941A39600153D60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EC5BBD752941A39600153D60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC5BBD7B2941A39600153D60 /* TravelMemoryProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TravelMemoryProject.xcdatamodel; sourceTree = "<group>"; };
+		EC5BBD7D2941A39700153D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC5BBD802941A39700153D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC5BBD822941A39700153D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC5BBD8C2941A3F500153D60 /* WidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5BBD8E2941A3F500153D60 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		EC5BBD902941A3F500153D60 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		EC5BBD932941A3F500153D60 /* WidgetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetExtension.swift; sourceTree = "<group>"; };
+		EC5BBD952941A3F500153D60 /* WidgetExtension.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = WidgetExtension.intentdefinition; sourceTree = "<group>"; };
+		EC5BBD962941A3F600153D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC5BBD982941A3F600153D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC5BBDA52941AFFB00153D60 /* VideoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoService.swift; sourceTree = "<group>"; };
+		EC5BBDA82941B09C00153D60 /* String_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String_Extension.swift; sourceTree = "<group>"; };
+		EC5BBDA92941B09C00153D60 /* UIAlertController_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertController_Extension.swift; sourceTree = "<group>"; };
+		EC5BBDAA2941B09C00153D60 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		EC5BBDAB2941B09C00153D60 /* UISlider_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISlider_Extension.swift; sourceTree = "<group>"; };
+		EC5BBDAC2941B09C00153D60 /* AVPlayer_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayer_Extension.swift; sourceTree = "<group>"; };
+		EC6ED42B2943451300218E05 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		ECAF4B622949A53F004169E7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		ECC499DE2947883800683B46 /* LocationList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationList.swift; sourceTree = "<group>"; };
+		ECC499E02947884000683B46 /* locationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationCell.swift; sourceTree = "<group>"; };
+		ECD523D5294849EF00A68E33 /* UserLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC5BBD6B2941A39600153D60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD523D729486D6200A68E33 /* MapKit.framework in Frameworks */,
+				871D45E5E56E4991465AE9E7 /* Pods_TravelMemoryProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5BBD892941A3F500153D60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5BBD912941A3F500153D60 /* SwiftUI.framework in Frameworks */,
+				EC6ED42C2943451300218E05 /* MapKit.framework in Frameworks */,
+				EC5BBD8F2941A3F500153D60 /* WidgetKit.framework in Frameworks */,
+				4F90736D8ECE525CAEEDBDA4 /* Pods_WidgetExtensionExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44E0BD20D8BAACCD271098FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				023471BFB38E4F3CF43C2CD7 /* Pods-TravelMemoryProject.debug.xcconfig */,
+				97D487456C8BE5D0BBE6925A /* Pods-TravelMemoryProject.release.xcconfig */,
+				1E1E278F1D1A348DAA64B570 /* Pods-WidgetExtensionExtension.debug.xcconfig */,
+				26CF8222188127E2EA21D89C /* Pods-WidgetExtensionExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC01C0D42941FCA4004DE98A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC5BBD652941A39600153D60 = {
+			isa = PBXGroup;
+			children = (
+				EC5BBD702941A39600153D60 /* TravelMemoryProject */,
+				EC5BBD922941A3F500153D60 /* WidgetExtension */,
+				EC5BBD8D2941A3F500153D60 /* Frameworks */,
+				EC5BBD6F2941A39600153D60 /* Products */,
+				44E0BD20D8BAACCD271098FD /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		EC5BBD6F2941A39600153D60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC5BBD6E2941A39600153D60 /* TravelMemoryProject.app */,
+				EC5BBD8C2941A3F500153D60 /* WidgetExtensionExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC5BBD702941A39600153D60 /* TravelMemoryProject */ = {
+			isa = PBXGroup;
+			children = (
+				EC5BBD712941A39600153D60 /* AppDelegate.swift */,
+				EC5BBD732941A39600153D60 /* SceneDelegate.swift */,
+				EC5BBD752941A39600153D60 /* ViewController.swift */,
+				ECC499E02947884000683B46 /* locationCell.swift */,
+				ECC499DE2947883800683B46 /* LocationList.swift */,
+				ECD523D5294849EF00A68E33 /* UserLocation.swift */,
+				EC01C0D42941FCA4004DE98A /* View */,
+				EC5BBDA72941B09C00153D60 /* Helpers */,
+				EC5BBDA42941AFFB00153D60 /* Service */,
+				ECAF4B622949A53F004169E7 /* Main.storyboard */,
+				EC5BBD7D2941A39700153D60 /* Assets.xcassets */,
+				EC5BBD7F2941A39700153D60 /* LaunchScreen.storyboard */,
+				EC5BBD822941A39700153D60 /* Info.plist */,
+				EC5BBD7A2941A39600153D60 /* TravelMemoryProject.xcdatamodeld */,
+			);
+			path = TravelMemoryProject;
+			sourceTree = "<group>";
+		};
+		EC5BBD8D2941A3F500153D60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC6ED42B2943451300218E05 /* MapKit.framework */,
+				EC5BBD8E2941A3F500153D60 /* WidgetKit.framework */,
+				EC5BBD902941A3F500153D60 /* SwiftUI.framework */,
+				BA69C96E05E18A8AAAABFABA /* Pods_TravelMemoryProject.framework */,
+				4C2B765957FC1513E39655CD /* Pods_WidgetExtensionExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC5BBD922941A3F500153D60 /* WidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				EC5BBD932941A3F500153D60 /* WidgetExtension.swift */,
+				EC5BBD952941A3F500153D60 /* WidgetExtension.intentdefinition */,
+				EC5BBD962941A3F600153D60 /* Assets.xcassets */,
+				EC5BBD982941A3F600153D60 /* Info.plist */,
+			);
+			path = WidgetExtension;
+			sourceTree = "<group>";
+		};
+		EC5BBDA42941AFFB00153D60 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EC5BBDA52941AFFB00153D60 /* VideoService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EC5BBDA72941B09C00153D60 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EC5BBDA82941B09C00153D60 /* String_Extension.swift */,
+				EC5BBDA92941B09C00153D60 /* UIAlertController_Extension.swift */,
+				EC5BBDAA2941B09C00153D60 /* Device.swift */,
+				EC5BBDAB2941B09C00153D60 /* UISlider_Extension.swift */,
+				EC5BBDAC2941B09C00153D60 /* AVPlayer_Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC5BBD6D2941A39600153D60 /* TravelMemoryProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC5BBD852941A39700153D60 /* Build configuration list for PBXNativeTarget "TravelMemoryProject" */;
+			buildPhases = (
+				F2036960AE98775FC9B1B4B5 /* [CP] Check Pods Manifest.lock */,
+				EC5BBD6A2941A39600153D60 /* Sources */,
+				EC5BBD6B2941A39600153D60 /* Frameworks */,
+				EC5BBD6C2941A39600153D60 /* Resources */,
+				EC5BBDA12941A3F600153D60 /* Embed App Extensions */,
+				896D7C21552C80B063BA4692 /* [CP] Embed Pods Frameworks */,
+				79B43D80050DDF02D766C49D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC5BBD9C2941A3F600153D60 /* PBXTargetDependency */,
+			);
+			name = TravelMemoryProject;
+			productName = TravelMemoryProject;
+			productReference = EC5BBD6E2941A39600153D60 /* TravelMemoryProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC5BBD8B2941A3F500153D60 /* WidgetExtensionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC5BBD9E2941A3F600153D60 /* Build configuration list for PBXNativeTarget "WidgetExtensionExtension" */;
+			buildPhases = (
+				CCB7E99A390038F592259C21 /* [CP] Check Pods Manifest.lock */,
+				EC5BBD882941A3F500153D60 /* Sources */,
+				EC5BBD892941A3F500153D60 /* Frameworks */,
+				EC5BBD8A2941A3F500153D60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetExtensionExtension;
+			productName = WidgetExtensionExtension;
+			productReference = EC5BBD8C2941A3F500153D60 /* WidgetExtensionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC5BBD662941A39600153D60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					EC5BBD6D2941A39600153D60 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					EC5BBD8B2941A3F500153D60 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = EC5BBD692941A39600153D60 /* Build configuration list for PBXProject "TravelMemoryProject" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC5BBD652941A39600153D60;
+			productRefGroup = EC5BBD6F2941A39600153D60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC5BBD6D2941A39600153D60 /* TravelMemoryProject */,
+				EC5BBD8B2941A3F500153D60 /* WidgetExtensionExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC5BBD6C2941A39600153D60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5BBD812941A39700153D60 /* LaunchScreen.storyboard in Resources */,
+				EC5BBD7E2941A39700153D60 /* Assets.xcassets in Resources */,
+				ECAF4B632949A53F004169E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5BBD8A2941A3F500153D60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5BBD972941A3F600153D60 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79B43D80050DDF02D766C49D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelMemoryProject/Pods-TravelMemoryProject-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelMemoryProject/Pods-TravelMemoryProject-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TravelMemoryProject/Pods-TravelMemoryProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		896D7C21552C80B063BA4692 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelMemoryProject/Pods-TravelMemoryProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelMemoryProject/Pods-TravelMemoryProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TravelMemoryProject/Pods-TravelMemoryProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCB7E99A390038F592259C21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WidgetExtensionExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2036960AE98775FC9B1B4B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelMemoryProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC5BBD6A2941A39600153D60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5BBDB02941B09C00153D60 /* UISlider_Extension.swift in Sources */,
+				EC5BBDA62941AFFC00153D60 /* VideoService.swift in Sources */,
+				ECC499E12947884000683B46 /* locationCell.swift in Sources */,
+				EC5BBD7C2941A39600153D60 /* TravelMemoryProject.xcdatamodeld in Sources */,
+				EC5BBDAE2941B09C00153D60 /* UIAlertController_Extension.swift in Sources */,
+				ECD523D6294849EF00A68E33 /* UserLocation.swift in Sources */,
+				EC5BBD762941A39600153D60 /* ViewController.swift in Sources */,
+				EC5BBDAD2941B09C00153D60 /* String_Extension.swift in Sources */,
+				ECC499DF2947883800683B46 /* LocationList.swift in Sources */,
+				EC5BBDB12941B09C00153D60 /* AVPlayer_Extension.swift in Sources */,
+				EC5BBD722941A39600153D60 /* AppDelegate.swift in Sources */,
+				EC5BBD742941A39600153D60 /* SceneDelegate.swift in Sources */,
+				EC5BBD9A2941A3F600153D60 /* WidgetExtension.intentdefinition in Sources */,
+				EC5BBDAF2941B09C00153D60 /* Device.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5BBD882941A3F500153D60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC79326D2949A60A001A8873 /* UserLocation.swift in Sources */,
+				EC5BBD992941A3F600153D60 /* WidgetExtension.intentdefinition in Sources */,
+				EC5BBD942941A3F500153D60 /* WidgetExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC5BBD9C2941A3F600153D60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC5BBD8B2941A3F500153D60 /* WidgetExtensionExtension */;
+			targetProxy = EC5BBD9B2941A3F600153D60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC5BBD7F2941A39700153D60 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC5BBD802941A39700153D60 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC5BBD832941A39700153D60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC5BBD842941A39700153D60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC5BBD862941A39700153D60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 023471BFB38E4F3CF43C2CD7 /* Pods-TravelMemoryProject.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M36758779V;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelMemoryProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TravelMemories;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need Camera Access";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Need Location Access";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need Location Access for your current location";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need MicroPhone Access";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need Photo Libary Access";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itpath.TravelMemory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC5BBD872941A39700153D60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97D487456C8BE5D0BBE6925A /* Pods-TravelMemoryProject.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M36758779V;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelMemoryProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TravelMemories;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need Camera Access";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Need Location Access";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need Location Access for your current location";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need MicroPhone Access";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need Photo Libary Access";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itpath.TravelMemory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC5BBD9F2941A3F600153D60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E1E278F1D1A348DAA64B570 /* Pods-WidgetExtensionExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M36758779V;
+				ENABLE_BITCODE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Need Location Access";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Need Location Access";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itpath.TravelMemory.WidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC5BBDA02941A3F600153D60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26CF8222188127E2EA21D89C /* Pods-WidgetExtensionExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M36758779V;
+				ENABLE_BITCODE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Need Location Access";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Need Location Access";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itpath.TravelMemory.WidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC5BBD692941A39600153D60 /* Build configuration list for PBXProject "TravelMemoryProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5BBD832941A39700153D60 /* Debug */,
+				EC5BBD842941A39700153D60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC5BBD852941A39700153D60 /* Build configuration list for PBXNativeTarget "TravelMemoryProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5BBD862941A39700153D60 /* Debug */,
+				EC5BBD872941A39700153D60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC5BBD9E2941A3F600153D60 /* Build configuration list for PBXNativeTarget "WidgetExtensionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5BBD9F2941A3F600153D60 /* Debug */,
+				EC5BBDA02941A3F600153D60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EC5BBD7A2941A39600153D60 /* TravelMemoryProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EC5BBD7B2941A39600153D60 /* TravelMemoryProject.xcdatamodel */,
+			);
+			currentVersion = EC5BBD7B2941A39600153D60 /* TravelMemoryProject.xcdatamodel */;
+			path = TravelMemoryProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EC5BBD662941A39600153D60 /* Project object */;
+}
