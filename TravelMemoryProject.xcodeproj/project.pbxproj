@@ -131,13 +131,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		EC01C0D42941FCA4004DE98A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		EC5BBD652941A39600153D60 = {
 			isa = PBXGroup;
 			children = (
@@ -167,7 +160,6 @@
 				ECC499E02947884000683B46 /* locationCell.swift */,
 				ECC499DE2947883800683B46 /* LocationList.swift */,
 				ECD523D5294849EF00A68E33 /* UserLocation.swift */,
-				EC01C0D42941FCA4004DE98A /* View */,
 				EC5BBDA72941B09C00153D60 /* Helpers */,
 				EC5BBDA42941AFFB00153D60 /* Service */,
 				ECAF4B622949A53F004169E7 /* Main.storyboard */,

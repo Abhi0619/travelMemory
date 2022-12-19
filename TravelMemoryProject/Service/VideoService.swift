@@ -190,59 +190,10 @@ extension VideoService: UIImagePickerControllerDelegate, UINavigationControllerD
                 self.saveVideo(at: mediaURL)
             }else {
                 Toast(text: "Please allow location access to save your video").show()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                     exit(-1)
                 }
             }
         }
-        
-    }
-}
-
-extension VideoService: CLLocationManagerDelegate {
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
-        if let location = locations.first {
-            print(latitude)
-            print(longitude)
-            latitude = location.coordinate.latitude
-            longitude = location.coordinate.longitude
-            self.locationManager.stopUpdatingLocation()
-            
-        }
-        
-    }
-    
-    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        let accuracyAuthorization = manager.accuracyAuthorization
-        switch accuracyAuthorization {
-        case .fullAccuracy:
-            break
-        case .reducedAccuracy:
-            break
-        default:
-            break
-        }
-    }
-    
-    //    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-    //
-    //        let userLocation:CLLocation = locations[0] as CLLocation
-    //
-    //        // Call stopUpdatingLocation() to stop listening for location updates,
-    //        // other wise this function will be called every time when user location changes.
-    //
-    //       // manager.stopUpdatingLocation(
-    //        print("user latitude = \(userLocation.coordinate.latitude)")
-    //        print("user longitude = \(userLocation.coordinate.longitude)")
-    //        latitude = userLocation.coordinate.latitude
-    //        longitude = userLocation.coordinate.longitude
-    //        self.locationManager.stopUpdatingLocation()
-    ////        addAsset(image: UIImage(named: "img")!, location: CLLocation(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude) )
-    //    }
-    
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
-    {
-        print("Error \(error)")
     }
 }
