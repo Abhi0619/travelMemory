@@ -111,7 +111,7 @@ extension ViewController {
                 print(string)
                 let fileURL = NSURL(fileURLWithPath:"\(string)")
                 print(fileURL)
-                playerview = AVPlayer(url: fileURL as URL)
+                playerview = AVPlayer(url: string)
                 playerviewcontroller.player = playerview
                 self.present(playerviewcontroller, animated: true){
                     self.playerviewcontroller.player?.play()
@@ -231,5 +231,5 @@ extension ViewController: VideoServiceDelegate {
  }*/
 class MyGMSMarker: GMSMarker {
     
-    var identifier: String?
+    var identifier: URL?
 }

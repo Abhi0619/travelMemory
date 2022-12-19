@@ -52,7 +52,6 @@ extension LocationList: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! locationCell
-//        let fileName = URL(fileURLWithPath: "\(arrData[indexPath.row].videoUrl)" ).lastPathComponent
         let fileName = URL(fileURLWithPath: "\(arrData[indexPath.row].videoUrl)").deletingPathExtension().lastPathComponent
 
         Swift.print(fileName)
@@ -63,14 +62,14 @@ extension LocationList: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("---------------------------")
-        var filevideoUrl = arrData[indexPath.row].videoUrl
-        print(filevideoUrl)
-        let fileURL = NSURL(fileURLWithPath:"\(filevideoUrl!)")
-        print(fileURL)
-        playerview = AVPlayer(url: fileURL as URL)
-        playerviewcontroller.player = playerview
-        self.present(playerviewcontroller, animated: true){
-            self.playerviewcontroller.player?.play()
+        if let filevideoUrl = arrData[indexPath.row].videoUrl {
+            playerview = AVPlayer(url: filevideoUrl)
+            playerviewcontroller.player = playerview
+            self.present(playerviewcontroller, animated: true){
+                self.playerviewcontroller.player?.play()
+            }
         }
     }
+    
 }
+
