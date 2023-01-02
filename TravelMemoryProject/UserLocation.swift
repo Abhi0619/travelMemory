@@ -102,8 +102,8 @@ extension UserLocation: CLLocationManagerDelegate {
         }
         DispatchQueue.main.async {
             self.completionBlock?(userLocation,nil)
-           // manager.stopUpdatingLocation()
-          //  self.completionBlock = nil
+            manager.stopUpdatingLocation()
+            self.completionBlock = nil
         }
         
     }
