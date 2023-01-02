@@ -29,11 +29,11 @@
 		EC5BBDB02941B09C00153D60 /* UISlider_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BBDAB2941B09C00153D60 /* UISlider_Extension.swift */; };
 		EC5BBDB12941B09C00153D60 /* AVPlayer_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BBDAC2941B09C00153D60 /* AVPlayer_Extension.swift */; };
 		EC6ED42C2943451300218E05 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6ED42B2943451300218E05 /* MapKit.framework */; };
-		EC79326D2949A60A001A8873 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD523D5294849EF00A68E33 /* UserLocation.swift */; };
 		ECAF4B632949A53F004169E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAF4B622949A53F004169E7 /* Main.storyboard */; };
 		ECC499DF2947883800683B46 /* LocationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC499DE2947883800683B46 /* LocationList.swift */; };
 		ECC499E12947884000683B46 /* locationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC499E02947884000683B46 /* locationCell.swift */; };
-		ECD523D6294849EF00A68E33 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD523D5294849EF00A68E33 /* UserLocation.swift */; };
+		ECCA200D2962B65500806646 /* CustomHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA200B2962B65500806646 /* CustomHud.swift */; };
+		ECCA200E2962B65500806646 /* CustomHud.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECCA200C2962B65500806646 /* CustomHud.xib */; };
 		ECD523D729486D6200A68E33 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6ED42B2943451300218E05 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,7 +93,8 @@
 		ECAF4B622949A53F004169E7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ECC499DE2947883800683B46 /* LocationList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationList.swift; sourceTree = "<group>"; };
 		ECC499E02947884000683B46 /* locationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationCell.swift; sourceTree = "<group>"; };
-		ECD523D5294849EF00A68E33 /* UserLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
+		ECCA200B2962B65500806646 /* CustomHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHud.swift; sourceTree = "<group>"; };
+		ECCA200C2962B65500806646 /* CustomHud.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomHud.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,12 +155,9 @@
 		EC5BBD702941A39600153D60 /* TravelMemoryProject */ = {
 			isa = PBXGroup;
 			children = (
-				EC5BBD712941A39600153D60 /* AppDelegate.swift */,
-				EC5BBD732941A39600153D60 /* SceneDelegate.swift */,
-				EC5BBD752941A39600153D60 /* ViewController.swift */,
-				ECC499E02947884000683B46 /* locationCell.swift */,
-				ECC499DE2947883800683B46 /* LocationList.swift */,
-				ECD523D5294849EF00A68E33 /* UserLocation.swift */,
+				ECCA20082962B63100806646 /* XIB */,
+				ECCA200F2962B6A700806646 /* Delegate */,
+				ECCA20102962B6BC00806646 /* ViewController */,
 				EC5BBDA72941B09C00153D60 /* Helpers */,
 				EC5BBDA42941AFFB00153D60 /* Service */,
 				ECAF4B622949A53F004169E7 /* Main.storyboard */,
@@ -212,6 +210,50 @@
 				EC5BBDAC2941B09C00153D60 /* AVPlayer_Extension.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		ECCA20082962B63100806646 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				ECCA200A2962B65500806646 /* CustomHud */,
+				ECCA20092962B63E00806646 /* Cell */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		ECCA20092962B63E00806646 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ECC499E02947884000683B46 /* locationCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		ECCA200A2962B65500806646 /* CustomHud */ = {
+			isa = PBXGroup;
+			children = (
+				ECCA200B2962B65500806646 /* CustomHud.swift */,
+				ECCA200C2962B65500806646 /* CustomHud.xib */,
+			);
+			path = CustomHud;
+			sourceTree = "<group>";
+		};
+		ECCA200F2962B6A700806646 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				EC5BBD712941A39600153D60 /* AppDelegate.swift */,
+				EC5BBD732941A39600153D60 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		ECCA20102962B6BC00806646 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EC5BBD752941A39600153D60 /* ViewController.swift */,
+				ECC499DE2947883800683B46 /* LocationList.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +343,7 @@
 			files = (
 				EC5BBD812941A39700153D60 /* LaunchScreen.storyboard in Resources */,
 				EC5BBD7E2941A39700153D60 /* Assets.xcassets in Resources */,
+				ECCA200E2962B65500806646 /* CustomHud.xib in Resources */,
 				ECAF4B632949A53F004169E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,7 +449,7 @@
 				ECC499E12947884000683B46 /* locationCell.swift in Sources */,
 				EC5BBD7C2941A39600153D60 /* TravelMemoryProject.xcdatamodeld in Sources */,
 				EC5BBDAE2941B09C00153D60 /* UIAlertController_Extension.swift in Sources */,
-				ECD523D6294849EF00A68E33 /* UserLocation.swift in Sources */,
+				ECCA200D2962B65500806646 /* CustomHud.swift in Sources */,
 				EC5BBD762941A39600153D60 /* ViewController.swift in Sources */,
 				EC5BBDAD2941B09C00153D60 /* String_Extension.swift in Sources */,
 				ECC499DF2947883800683B46 /* LocationList.swift in Sources */,
@@ -422,7 +465,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC79326D2949A60A001A8873 /* UserLocation.swift in Sources */,
 				EC5BBD992941A3F600153D60 /* WidgetExtension.intentdefinition in Sources */,
 				EC5BBD942941A3F500153D60 /* WidgetExtension.swift in Sources */,
 			);
