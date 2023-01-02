@@ -32,8 +32,6 @@
 		ECAF4B632949A53F004169E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAF4B622949A53F004169E7 /* Main.storyboard */; };
 		ECC499DF2947883800683B46 /* LocationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC499DE2947883800683B46 /* LocationList.swift */; };
 		ECC499E12947884000683B46 /* locationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC499E02947884000683B46 /* locationCell.swift */; };
-		ECCA200D2962B65500806646 /* CustomHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA200B2962B65500806646 /* CustomHud.swift */; };
-		ECCA200E2962B65500806646 /* CustomHud.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECCA200C2962B65500806646 /* CustomHud.xib */; };
 		ECCA20132962B84100806646 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA20122962B84100806646 /* UserLocation.swift */; };
 		ECD523D729486D6200A68E33 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6ED42B2943451300218E05 /* MapKit.framework */; };
 /* End PBXBuildFile section */
@@ -94,8 +92,6 @@
 		ECAF4B622949A53F004169E7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ECC499DE2947883800683B46 /* LocationList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationList.swift; sourceTree = "<group>"; };
 		ECC499E02947884000683B46 /* locationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationCell.swift; sourceTree = "<group>"; };
-		ECCA200B2962B65500806646 /* CustomHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHud.swift; sourceTree = "<group>"; };
-		ECCA200C2962B65500806646 /* CustomHud.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomHud.xib; sourceTree = "<group>"; };
 		ECCA20122962B84100806646 /* UserLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -205,6 +201,7 @@
 		EC5BBDA72941B09C00153D60 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				ECCA20122962B84100806646 /* UserLocation.swift */,
 				EC5BBDA82941B09C00153D60 /* String_Extension.swift */,
 				EC5BBDA92941B09C00153D60 /* UIAlertController_Extension.swift */,
 				EC5BBDAA2941B09C00153D60 /* Device.swift */,
@@ -217,7 +214,6 @@
 		ECCA20082962B63100806646 /* XIB */ = {
 			isa = PBXGroup;
 			children = (
-				ECCA200A2962B65500806646 /* CustomHud */,
 				ECCA20092962B63E00806646 /* Cell */,
 			);
 			path = XIB;
@@ -231,21 +227,11 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		ECCA200A2962B65500806646 /* CustomHud */ = {
-			isa = PBXGroup;
-			children = (
-				ECCA200B2962B65500806646 /* CustomHud.swift */,
-				ECCA200C2962B65500806646 /* CustomHud.xib */,
-			);
-			path = CustomHud;
-			sourceTree = "<group>";
-		};
 		ECCA200F2962B6A700806646 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
 				EC5BBD712941A39600153D60 /* AppDelegate.swift */,
 				EC5BBD732941A39600153D60 /* SceneDelegate.swift */,
-				ECCA20122962B84100806646 /* UserLocation.swift */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -346,7 +332,6 @@
 			files = (
 				EC5BBD812941A39700153D60 /* LaunchScreen.storyboard in Resources */,
 				EC5BBD7E2941A39700153D60 /* Assets.xcassets in Resources */,
-				ECCA200E2962B65500806646 /* CustomHud.xib in Resources */,
 				ECAF4B632949A53F004169E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,7 +437,6 @@
 				ECC499E12947884000683B46 /* locationCell.swift in Sources */,
 				EC5BBD7C2941A39600153D60 /* TravelMemoryProject.xcdatamodeld in Sources */,
 				EC5BBDAE2941B09C00153D60 /* UIAlertController_Extension.swift in Sources */,
-				ECCA200D2962B65500806646 /* CustomHud.swift in Sources */,
 				EC5BBD762941A39600153D60 /* ViewController.swift in Sources */,
 				EC5BBDAD2941B09C00153D60 /* String_Extension.swift in Sources */,
 				ECC499DF2947883800683B46 /* LocationList.swift in Sources */,
