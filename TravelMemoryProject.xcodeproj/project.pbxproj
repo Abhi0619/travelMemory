@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		4F90736D8ECE525CAEEDBDA4 /* Pods_WidgetExtensionExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2B765957FC1513E39655CD /* Pods_WidgetExtensionExtension.framework */; };
 		871D45E5E56E4991465AE9E7 /* Pods_TravelMemoryProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA69C96E05E18A8AAAABFABA /* Pods_TravelMemoryProject.framework */; };
+		EC4E080029669058008EF5C3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4E07FD29669058008EF5C3 /* Models.swift */; };
+		EC4E080129669058008EF5C3 /* CatFactApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4E07FE29669058008EF5C3 /* CatFactApi.swift */; };
+		EC4E080229669058008EF5C3 /* CatFactProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4E07FF29669058008EF5C3 /* CatFactProvider.swift */; };
+		EC4E08042966A04F008EF5C3 /* Subclasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4E08032966A04F008EF5C3 /* Subclasses.swift */; };
 		EC5BBD722941A39600153D60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BBD712941A39600153D60 /* AppDelegate.swift */; };
 		EC5BBD742941A39600153D60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BBD732941A39600153D60 /* SceneDelegate.swift */; };
 		EC5BBD762941A39600153D60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BBD752941A39600153D60 /* ViewController.swift */; };
@@ -28,6 +32,16 @@
 		EC5BBDAF2941B09C00153D60 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BBDAA2941B09C00153D60 /* Device.swift */; };
 		EC5BBDB02941B09C00153D60 /* UISlider_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BBDAB2941B09C00153D60 /* UISlider_Extension.swift */; };
 		EC5BBDB12941B09C00153D60 /* AVPlayer_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BBDAC2941B09C00153D60 /* AVPlayer_Extension.swift */; };
+		EC62B6D929644B6F00498060 /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = EC62B6D829644B6F00498060 /* netfox */; };
+		EC62B6E029644D1A00498060 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC62B6DB29644D1A00498060 /* UIColorExtension.swift */; };
+		EC62B6E129644D1A00498060 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC62B6DC29644D1A00498060 /* UIFontExtension.swift */; };
+		EC62B6E229644D1A00498060 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC62B6DD29644D1A00498060 /* StringExtension.swift */; };
+		EC62B6E329644D1A00498060 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC62B6DE29644D1A00498060 /* DateExtension.swift */; };
+		EC62B6E629645AD300498060 /* RawdataConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC62B6E529645AD300498060 /* RawdataConverter.swift */; };
+		EC62B6E829645B1E00498060 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC62B6E729645B1D00498060 /* Enums.swift */; };
+		EC62B6EA29645B4100498060 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC62B6E929645B4100498060 /* Constant.swift */; };
+		EC62B6EC29645D0600498060 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC62B6EB29645D0600498060 /* LoginVC.swift */; };
+		EC62B6EE29645DCE00498060 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC62B6ED29645DCE00498060 /* RegisterVC.swift */; };
 		EC6ED42C2943451300218E05 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6ED42B2943451300218E05 /* MapKit.framework */; };
 		ECAF4B632949A53F004169E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAF4B622949A53F004169E7 /* Main.storyboard */; };
 		ECC499DF2947883800683B46 /* LocationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC499DE2947883800683B46 /* LocationList.swift */; };
@@ -67,6 +81,10 @@
 		4C2B765957FC1513E39655CD /* Pods_WidgetExtensionExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WidgetExtensionExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D487456C8BE5D0BBE6925A /* Pods-TravelMemoryProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelMemoryProject.release.xcconfig"; path = "Target Support Files/Pods-TravelMemoryProject/Pods-TravelMemoryProject.release.xcconfig"; sourceTree = "<group>"; };
 		BA69C96E05E18A8AAAABFABA /* Pods_TravelMemoryProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelMemoryProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4E07FD29669058008EF5C3 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		EC4E07FE29669058008EF5C3 /* CatFactApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatFactApi.swift; sourceTree = "<group>"; };
+		EC4E07FF29669058008EF5C3 /* CatFactProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatFactProvider.swift; sourceTree = "<group>"; };
+		EC4E08032966A04F008EF5C3 /* Subclasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subclasses.swift; sourceTree = "<group>"; };
 		EC5BBD6E2941A39600153D60 /* TravelMemoryProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelMemoryProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5BBD712941A39600153D60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC5BBD732941A39600153D60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +106,15 @@
 		EC5BBDAA2941B09C00153D60 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		EC5BBDAB2941B09C00153D60 /* UISlider_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISlider_Extension.swift; sourceTree = "<group>"; };
 		EC5BBDAC2941B09C00153D60 /* AVPlayer_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayer_Extension.swift; sourceTree = "<group>"; };
+		EC62B6DB29644D1A00498060 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		EC62B6DC29644D1A00498060 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		EC62B6DD29644D1A00498060 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		EC62B6DE29644D1A00498060 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		EC62B6E529645AD300498060 /* RawdataConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawdataConverter.swift; sourceTree = "<group>"; };
+		EC62B6E729645B1D00498060 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		EC62B6E929645B4100498060 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		EC62B6EB29645D0600498060 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		EC62B6ED29645DCE00498060 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		EC6ED42B2943451300218E05 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		ECAF4B622949A53F004169E7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ECC499DE2947883800683B46 /* LocationList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationList.swift; sourceTree = "<group>"; };
@@ -102,6 +129,7 @@
 			files = (
 				ECD523D729486D6200A68E33 /* MapKit.framework in Frameworks */,
 				871D45E5E56E4991465AE9E7 /* Pods_TravelMemoryProject.framework in Frameworks */,
+				EC62B6D929644B6F00498060 /* netfox in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +156,16 @@
 				26CF8222188127E2EA21D89C /* Pods-WidgetExtensionExtension.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC4E07FC29669043008EF5C3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EC4E07FE29669058008EF5C3 /* CatFactApi.swift */,
+				EC4E07FF29669058008EF5C3 /* CatFactProvider.swift */,
+				EC4E07FD29669058008EF5C3 /* Models.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		EC5BBD652941A39600153D60 = {
@@ -157,6 +195,7 @@
 				ECCA200F2962B6A700806646 /* Delegate */,
 				ECCA20102962B6BC00806646 /* ViewController */,
 				EC5BBDA72941B09C00153D60 /* Helpers */,
+				EC62B6DA29644D1A00498060 /* Extension */,
 				EC5BBDA42941AFFB00153D60 /* Service */,
 				ECAF4B622949A53F004169E7 /* Main.storyboard */,
 				EC5BBD7D2941A39700153D60 /* Assets.xcassets */,
@@ -201,14 +240,30 @@
 		EC5BBDA72941B09C00153D60 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				EC4E07FC29669043008EF5C3 /* API */,
+				EC62B6E529645AD300498060 /* RawdataConverter.swift */,
+				EC62B6E929645B4100498060 /* Constant.swift */,
+				EC62B6E729645B1D00498060 /* Enums.swift */,
 				ECCA20122962B84100806646 /* UserLocation.swift */,
 				EC5BBDA82941B09C00153D60 /* String_Extension.swift */,
 				EC5BBDA92941B09C00153D60 /* UIAlertController_Extension.swift */,
 				EC5BBDAA2941B09C00153D60 /* Device.swift */,
+				EC4E08032966A04F008EF5C3 /* Subclasses.swift */,
 				EC5BBDAB2941B09C00153D60 /* UISlider_Extension.swift */,
 				EC5BBDAC2941B09C00153D60 /* AVPlayer_Extension.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EC62B6DA29644D1A00498060 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EC62B6DB29644D1A00498060 /* UIColorExtension.swift */,
+				EC62B6DC29644D1A00498060 /* UIFontExtension.swift */,
+				EC62B6DD29644D1A00498060 /* StringExtension.swift */,
+				EC62B6DE29644D1A00498060 /* DateExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		ECCA20082962B63100806646 /* XIB */ = {
@@ -241,6 +296,8 @@
 			children = (
 				EC5BBD752941A39600153D60 /* ViewController.swift */,
 				ECC499DE2947883800683B46 /* LocationList.swift */,
+				EC62B6EB29645D0600498060 /* LoginVC.swift */,
+				EC62B6ED29645DCE00498060 /* RegisterVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -266,6 +323,9 @@
 				EC5BBD9C2941A3F600153D60 /* PBXTargetDependency */,
 			);
 			name = TravelMemoryProject;
+			packageProductDependencies = (
+				EC62B6D829644B6F00498060 /* netfox */,
+			);
 			productName = TravelMemoryProject;
 			productReference = EC5BBD6E2941A39600153D60 /* TravelMemoryProject.app */;
 			productType = "com.apple.product-type.application";
@@ -315,6 +375,9 @@
 				Base,
 			);
 			mainGroup = EC5BBD652941A39600153D60;
+			packageReferences = (
+				EC62B6D729644B6F00498060 /* XCRemoteSwiftPackageReference "netfox" */,
+			);
 			productRefGroup = EC5BBD6F2941A39600153D60 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -432,16 +495,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC62B6EC29645D0600498060 /* LoginVC.swift in Sources */,
+				EC4E08042966A04F008EF5C3 /* Subclasses.swift in Sources */,
 				EC5BBDB02941B09C00153D60 /* UISlider_Extension.swift in Sources */,
 				EC5BBDA62941AFFC00153D60 /* VideoService.swift in Sources */,
+				EC4E080029669058008EF5C3 /* Models.swift in Sources */,
+				EC62B6E829645B1E00498060 /* Enums.swift in Sources */,
+				EC62B6E129644D1A00498060 /* UIFontExtension.swift in Sources */,
+				EC4E080129669058008EF5C3 /* CatFactApi.swift in Sources */,
+				EC4E080229669058008EF5C3 /* CatFactProvider.swift in Sources */,
+				EC62B6E029644D1A00498060 /* UIColorExtension.swift in Sources */,
+				EC62B6EE29645DCE00498060 /* RegisterVC.swift in Sources */,
 				ECC499E12947884000683B46 /* locationCell.swift in Sources */,
 				EC5BBD7C2941A39600153D60 /* TravelMemoryProject.xcdatamodeld in Sources */,
 				EC5BBDAE2941B09C00153D60 /* UIAlertController_Extension.swift in Sources */,
+				EC62B6E629645AD300498060 /* RawdataConverter.swift in Sources */,
 				EC5BBD762941A39600153D60 /* ViewController.swift in Sources */,
+				EC62B6E229644D1A00498060 /* StringExtension.swift in Sources */,
 				EC5BBDAD2941B09C00153D60 /* String_Extension.swift in Sources */,
 				ECC499DF2947883800683B46 /* LocationList.swift in Sources */,
 				ECCA20132962B84100806646 /* UserLocation.swift in Sources */,
+				EC62B6EA29645B4100498060 /* Constant.swift in Sources */,
 				EC5BBDB12941B09C00153D60 /* AVPlayer_Extension.swift in Sources */,
+				EC62B6E329644D1A00498060 /* DateExtension.swift in Sources */,
 				EC5BBD722941A39600153D60 /* AppDelegate.swift in Sources */,
 				EC5BBD742941A39600153D60 /* SceneDelegate.swift in Sources */,
 				EC5BBD9A2941A3F600153D60 /* WidgetExtension.intentdefinition in Sources */,
@@ -763,6 +839,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC62B6D729644B6F00498060 /* XCRemoteSwiftPackageReference "netfox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kasketis/netfox";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC62B6D829644B6F00498060 /* netfox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC62B6D729644B6F00498060 /* XCRemoteSwiftPackageReference "netfox" */;
+			productName = netfox;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		EC5BBD7A2941A39600153D60 /* TravelMemoryProject.xcdatamodeld */ = {

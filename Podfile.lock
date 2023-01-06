@@ -4,21 +4,25 @@ PODS:
   - GoogleMaps/Base (7.2.0)
   - GoogleMaps/Maps (7.2.0):
     - GoogleMaps/Base
+  - TextFieldEffects (1.6.0)
   - Toaster (2.3.0)
 
 DEPENDENCIES:
   - GoogleMaps
+  - TextFieldEffects
   - Toaster
 
 SPEC REPOS:
   trunk:
     - GoogleMaps
+    - TextFieldEffects
     - Toaster
 
 SPEC CHECKSUMS:
   GoogleMaps: 65ce5426e2398bb81433c8076f2ab6419c2c5537
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
 
-PODFILE CHECKSUM: 9ccabf860a09ba1b92c76c29e85eb88531c9985a
+PODFILE CHECKSUM: 7267ad2c47cee18b232e3a33ae88f379de42b3ca
 
 COCOAPODS: 1.11.3

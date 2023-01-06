@@ -6,6 +6,7 @@ target 'TravelMemoryProject' do
   use_frameworks!
 pod 'Toaster'
 pod 'GoogleMaps'
+pod 'TextFieldEffects'
   # Pods for TravelMemoryProject
 
 end
