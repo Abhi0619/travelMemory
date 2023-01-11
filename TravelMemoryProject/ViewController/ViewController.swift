@@ -12,7 +12,6 @@ import AVFoundation
 import GoogleMaps
 class ViewController: UIViewController,CLLocationManagerDelegate, GMSMapViewDelegate {
     //MARK: - IBOutlet
-    @IBOutlet weak var btnListView: UIButton!
     @IBOutlet weak var googleMapView: GMSMapView!
     @IBOutlet weak var mapKitView: MKMapView!
     var locationManager = CLLocationManager()
@@ -28,7 +27,6 @@ class ViewController: UIViewController,CLLocationManagerDelegate, GMSMapViewDele
     //Application Method
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnListView.layer.cornerRadius = 15
         // Do any additional setup after loading the view.
         if isFromWidget {
             VideoService.instance.launchVideoRecorder(in: self, completion: nil)
@@ -45,10 +43,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate, GMSMapViewDele
         self.locationManager.startUpdatingLocation()
         
     }
-    @IBAction func btnListViewClicked(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "LocationList") as? LocationList
-        self.navigationController?.pushViewController(vc!, animated: true)
-    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         fetchCoreData()
@@ -66,6 +61,10 @@ class ViewController: UIViewController,CLLocationManagerDelegate, GMSMapViewDele
         
     }
     
+    @IBAction func btnSystemTapped(_ sender: UIButton) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SystemVC") as! SystemVC
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 //MARK: - Application Mehod
 extension ViewController {

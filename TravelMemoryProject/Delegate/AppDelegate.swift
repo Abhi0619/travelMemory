@@ -12,17 +12,50 @@ import netfox
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         GMSServices.provideAPIKey("AIzaSyDhLgfTwASyc_Vs8UN3XuylZK0UO2PN5K8")
         NFX.sharedInstance().start()
+        if #available(iOS 13, *) {
+        }else{
+            prepareForDirectLogin()
+        }
         return true
     }
-
+    
+    func prepareForDirectLogin() {
+        if isUserLoggedIn() {
+            directLoginToHome()
+         }
+    }
+    
+    func isUserLoggedIn() -> Bool {
+        if let _ = LoginModel.getUserDetailFromUserDefault() {
+            return true
+        }
+        return false
+    }
+    
+    func directLoginToHome() {
+        let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "GuestVC")
+        let vc2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController")
+        let nav = _appDelegator.window?.rootViewController as! UINavigationController
+        nav.viewControllers = [vc1, vc2]
+        _appDelegator.window?.rootViewController = nav
+    }
+    
     // MARK: UISceneSession Lifecycle
-
+    func prepareToLogout() {
+        self.window?.rootViewController?.dismiss(animated: false, completion: nil)
+        if let navigationvc = _appDelegator.window?.rootViewController as? UINavigationController {
+            navigationvc.presentingViewController?.dismiss(animated: false, completion: nil)
+            navigationvc.presentingViewController?.presentingViewController?.dismiss(animated: false, completion: nil)
+            navigationvc.popToRootViewController(animated: false)
+        }
+    }
+    
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.

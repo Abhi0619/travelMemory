@@ -200,9 +200,12 @@ extension VideoService: UIImagePickerControllerDelegate, UINavigationControllerD
                     if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
                         let newItem = TravelMemory(context:context)
                         if let latitude = self.latitude,let longitude = self.longitude  {
+                            newItem.fileName = success.lastPathComponent
                             newItem.videoUrl = success
                             newItem.latitude = Double(latitude)
                             newItem.longitude = Double(longitude)
+                            newItem.isSync = false
+                            newItem.createdAt = Date.currentDate()
                             (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
                         }else {
                             Toast(text: "Please allow location access to save your video").show()
@@ -226,7 +229,7 @@ extension AVMutableComposition {
             return
         }
         
-        let outputURL = documentDirectory.appendingPathComponent("Video\(Int.random(in: 0..<600)).mp4")
+        let outputURL = documentDirectory.appendingPathComponent("\(Date.getCurrentDate()).mp4")
         
         // If there is only one video, we dont to touch it to save export time.
         if let url = urls.first, urls.count == 1 {

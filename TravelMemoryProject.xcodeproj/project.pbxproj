@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4F90736D8ECE525CAEEDBDA4 /* Pods_WidgetExtensionExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2B765957FC1513E39655CD /* Pods_WidgetExtensionExtension.framework */; };
 		871D45E5E56E4991465AE9E7 /* Pods_TravelMemoryProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA69C96E05E18A8AAAABFABA /* Pods_TravelMemoryProject.framework */; };
+		EC2296DE296D931200360F14 /* GuestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2296DD296D931200360F14 /* GuestVC.swift */; };
 		EC4E080029669058008EF5C3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4E07FD29669058008EF5C3 /* Models.swift */; };
 		EC4E080129669058008EF5C3 /* CatFactApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4E07FE29669058008EF5C3 /* CatFactApi.swift */; };
 		EC4E080229669058008EF5C3 /* CatFactProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4E07FF29669058008EF5C3 /* CatFactProvider.swift */; };
@@ -43,6 +44,9 @@
 		EC62B6EC29645D0600498060 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC62B6EB29645D0600498060 /* LoginVC.swift */; };
 		EC62B6EE29645DCE00498060 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC62B6ED29645DCE00498060 /* RegisterVC.swift */; };
 		EC6ED42C2943451300218E05 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6ED42B2943451300218E05 /* MapKit.framework */; };
+		EC9B5FFD296D2CB2001DE44A /* SystemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9B5FFC296D2CB2001DE44A /* SystemVC.swift */; };
+		EC9B6000296D3488001DE44A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EC9B5FFF296D3488001DE44A /* Alamofire */; };
+		EC9B6002296D41BB001DE44A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9B6001296D41BB001DE44A /* Extension.swift */; };
 		ECAF4B632949A53F004169E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAF4B622949A53F004169E7 /* Main.storyboard */; };
 		ECC499DF2947883800683B46 /* LocationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC499DE2947883800683B46 /* LocationList.swift */; };
 		ECC499E12947884000683B46 /* locationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC499E02947884000683B46 /* locationCell.swift */; };
@@ -81,6 +85,7 @@
 		4C2B765957FC1513E39655CD /* Pods_WidgetExtensionExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WidgetExtensionExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D487456C8BE5D0BBE6925A /* Pods-TravelMemoryProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelMemoryProject.release.xcconfig"; path = "Target Support Files/Pods-TravelMemoryProject/Pods-TravelMemoryProject.release.xcconfig"; sourceTree = "<group>"; };
 		BA69C96E05E18A8AAAABFABA /* Pods_TravelMemoryProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelMemoryProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2296DD296D931200360F14 /* GuestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestVC.swift; sourceTree = "<group>"; };
 		EC4E07FD29669058008EF5C3 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		EC4E07FE29669058008EF5C3 /* CatFactApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatFactApi.swift; sourceTree = "<group>"; };
 		EC4E07FF29669058008EF5C3 /* CatFactProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatFactProvider.swift; sourceTree = "<group>"; };
@@ -116,6 +121,8 @@
 		EC62B6EB29645D0600498060 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		EC62B6ED29645DCE00498060 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		EC6ED42B2943451300218E05 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EC9B5FFC296D2CB2001DE44A /* SystemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemVC.swift; sourceTree = "<group>"; };
+		EC9B6001296D41BB001DE44A /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		ECAF4B622949A53F004169E7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ECC499DE2947883800683B46 /* LocationList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationList.swift; sourceTree = "<group>"; };
 		ECC499E02947884000683B46 /* locationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationCell.swift; sourceTree = "<group>"; };
@@ -128,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECD523D729486D6200A68E33 /* MapKit.framework in Frameworks */,
+				EC9B6000296D3488001DE44A /* Alamofire in Frameworks */,
 				871D45E5E56E4991465AE9E7 /* Pods_TravelMemoryProject.framework in Frameworks */,
 				EC62B6D929644B6F00498060 /* netfox in Frameworks */,
 			);
@@ -262,6 +270,7 @@
 				EC62B6DC29644D1A00498060 /* UIFontExtension.swift */,
 				EC62B6DD29644D1A00498060 /* StringExtension.swift */,
 				EC62B6DE29644D1A00498060 /* DateExtension.swift */,
+				EC9B6001296D41BB001DE44A /* Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -298,6 +307,8 @@
 				ECC499DE2947883800683B46 /* LocationList.swift */,
 				EC62B6EB29645D0600498060 /* LoginVC.swift */,
 				EC62B6ED29645DCE00498060 /* RegisterVC.swift */,
+				EC9B5FFC296D2CB2001DE44A /* SystemVC.swift */,
+				EC2296DD296D931200360F14 /* GuestVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -325,6 +336,7 @@
 			name = TravelMemoryProject;
 			packageProductDependencies = (
 				EC62B6D829644B6F00498060 /* netfox */,
+				EC9B5FFF296D3488001DE44A /* Alamofire */,
 			);
 			productName = TravelMemoryProject;
 			productReference = EC5BBD6E2941A39600153D60 /* TravelMemoryProject.app */;
@@ -377,6 +389,7 @@
 			mainGroup = EC5BBD652941A39600153D60;
 			packageReferences = (
 				EC62B6D729644B6F00498060 /* XCRemoteSwiftPackageReference "netfox" */,
+				EC9B5FFE296D3487001DE44A /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = EC5BBD6F2941A39600153D60 /* Products */;
 			projectDirPath = "";
@@ -514,6 +527,8 @@
 				EC62B6E229644D1A00498060 /* StringExtension.swift in Sources */,
 				EC5BBDAD2941B09C00153D60 /* String_Extension.swift in Sources */,
 				ECC499DF2947883800683B46 /* LocationList.swift in Sources */,
+				EC2296DE296D931200360F14 /* GuestVC.swift in Sources */,
+				EC9B5FFD296D2CB2001DE44A /* SystemVC.swift in Sources */,
 				ECCA20132962B84100806646 /* UserLocation.swift in Sources */,
 				EC62B6EA29645B4100498060 /* Constant.swift in Sources */,
 				EC5BBDB12941B09C00153D60 /* AVPlayer_Extension.swift in Sources */,
@@ -521,6 +536,7 @@
 				EC5BBD722941A39600153D60 /* AppDelegate.swift in Sources */,
 				EC5BBD742941A39600153D60 /* SceneDelegate.swift in Sources */,
 				EC5BBD9A2941A3F600153D60 /* WidgetExtension.intentdefinition in Sources */,
+				EC9B6002296D41BB001DE44A /* Extension.swift in Sources */,
 				EC5BBDAF2941B09C00153D60 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -849,6 +865,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		EC9B5FFE296D3487001DE44A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -856,6 +880,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EC62B6D729644B6F00498060 /* XCRemoteSwiftPackageReference "netfox" */;
 			productName = netfox;
+		};
+		EC9B5FFF296D3488001DE44A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC9B5FFE296D3487001DE44A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 

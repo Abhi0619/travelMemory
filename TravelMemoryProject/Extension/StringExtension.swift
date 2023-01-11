@@ -254,3 +254,23 @@ extension String {
 //    }
     
 }
+extension String {
+    
+    var removeSpecialCharacters: String {
+        return self.components(separatedBy: CharacterSet.alphanumerics.inverted).filter({ !$0.isEmpty }).joined(separator: "")
+    }
+    
+    var deletePathVideo: String {
+        do {
+            if let url = URL(string: self) {
+                try FileManager.default.removeItem(at: url)
+                return "deleted"
+            }
+        }catch {
+            print(error)
+            return "\(error.localizedDescription)"
+        }
+        return ""
+    }
+    
+}

@@ -11,6 +11,7 @@ import AVKit
 class LocationList: UIViewController {
     
     @IBOutlet weak var locationTblView: UITableView!
+    @IBOutlet weak var lblNoData: UILabel!
     var arrData: [TravelMemory] = []
     var playerviewcontroller = AVPlayerViewController()
     var playerview = AVPlayer ()
@@ -45,8 +46,15 @@ class LocationList: UIViewController {
     }
     
 }
+extension LocationList {
+    @IBAction func btnBackTapped(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
+}
 extension LocationList: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+        lblNoData.text = arrData.count == 0 ? "No Avaliable Data" : ""
         return arrData.count
     }
     

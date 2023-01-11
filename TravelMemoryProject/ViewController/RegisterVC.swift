@@ -45,9 +45,17 @@ extension RegisterVC {
         CatFactApi().SignUp(parameters: params) { result in
             switch result {
             case .success(let value):
-                print("Success \(value)")
+                Toast(text: "SuccessFully register").show()
                 self.navigationController?.popViewController(animated: true)
             case .failure(let error):
+                switch error{
+                case .internalError:
+                    Toast(text: "Something went wrong.").show()
+                case .serverError:
+                    Toast(text: "Server issue.").show()
+                case .parsingError:
+                    Toast(text: "You have already signup with this email.").show()
+                }
                 print("-------\(error.localizedDescription)")
             default:
                 print("Default")

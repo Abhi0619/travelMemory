@@ -216,3 +216,19 @@ extension Date {
         self = Calendar.current.date(byAdding: .day, value: days, to: self)!
     }
 }
+extension Date {
+    
+    static func getCurrentDate() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy/MM/dd HH:mm:ss"//"dd/MM/yyyy HH:mm:ss"
+        return "VIDEO_\(dateFormatter.string(from: Date()).removeSpecialCharacters)"
+    }
+    
+    static func currentDate() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        let result = dateFormatter.string(from: Date())
+        return result
+    }
+    
+}

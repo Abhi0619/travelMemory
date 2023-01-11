@@ -13,11 +13,21 @@ class loginVC: UIViewController {
     
     @IBOutlet weak var txtEmail: HoshiTextField!
     @IBOutlet weak var txtPassword: HoshiTextField!
+    var isFromWidget:Bool = false
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if isFromWidget {
+            VideoService.instance.launchVideoRecorder(in: self, completion: nil)
+        }
     }
     
+    func naviToViewController() {
+        DispatchQueue.main.async {
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as! ViewController
+            self.navigationController?.pushViewController(vc, animated: false)
+        }
+        
+    }
     
 }
 //MARK: - Action Method
@@ -49,9 +59,20 @@ extension loginVC {
             switch result {
             case .success(let value):
                 Toast(text: "Login Successfully").show()
+                value.setUserDetailToUserDefault()
+                print(LoginModel.getUserDetailFromUserDefault())
                 print("WITH RETURN TYPE \(value)")
+                self.naviToViewController()
             case .failure(let error):
                 print("-------\(error.localizedDescription)")
+                switch error {
+                case .internalError:
+                    Toast(text: "Something went wrong.").show()
+                case .serverError:
+                    Toast(text: "Server issue.").show()
+                case .parsingError:
+                    Toast(text: "Invalid Cerdential.").show()
+                }
             default:
                 print("Default")
             }

@@ -12,10 +12,11 @@ let app_store_ID: String = { "" }()
 let app_iTunes_URL: String  = { "https://itunes.apple.com/us/app/id\(app_store_ID)" }()
 let backgroundIdentifier: String = { "\(_bundleIdentifier).uploadbackground" }()
 
-
+let userDefaultIsUploadedToCloud = "isUploadedToCloud"
+let userDefaultRemoveFromDevice = "removeFromDevice"
 let directoryName: String = "MaanMandirAudio"
 let isValidSubscrible:String = "isValidSubscrible"
-let in_AppPurchase_Detail : String = "InAppPurchaseDetail"
+let user_Detail : String = "InAppPurchaseDetail"
 let _fcmToken:String = "fcmToken"
 let _appName: String = {
     let displayname = RawdataConverter.string(Bundle.main.object(forInfoDictionaryKey: RawdataConverter.string(kCFBundleNameKey)))
